@@ -35,7 +35,7 @@ async function handleSubmit(event) {
 }
 form.addEventListener("submit", handleSubmit);
 
-// FORM BORDERS 
+// FORM BORDERS
 $("#contact-form input,#contact-form textarea").on("input focusin",(e)=>{
   $(e.target).parent().addClass("focusIn");
   if ($(e.target).val().trim().length > 0) {
@@ -211,7 +211,7 @@ themeButton.addEventListener("click", () => {
 
 // Typing Animation using Typed JS
 var typed = new Typed(".type", {
-  strings: ["a Web", "an Android", "a Blockchain"],
+  strings: ["a Web", "a Python", "a ML"],
   smartBackspace: true,
   startDelay: 1000,
   typeSpeed: 130,
