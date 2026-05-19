@@ -5,779 +5,492 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/img/pfp-with-bg.jpg" type="image/webp">
-  <link rel="icon" href="./assets/img/pfp-with-bg.jpg" type="image/webp">
-  <meta name="description"
-    content="Tanudeep is currently a 1st year Postgrad from India. He is enthusiastic about web development and Open-Source." />
-  <meta property="og:title" content="Tanudeep Ganguly" />
+  <title>Tanudeep Ganguly — AI Engineer & Robotics Specialist</title>
+  <meta name="description" content="Tanudeep Ganguly — AI Engineer at Tata Electronics. Specializing in computer vision, deep learning, and robotics." />
+  
+  <meta property="og:title" content="Tanudeep Ganguly — AI Engineer" />
   <meta property="og:url" content="https://thekakarott.github.io/" />
-  <meta property="og:description"
-    content="Tanudeep is currently a 1st year Postgrad from India. He is enthusiastic about web development and Open-Source." />
-  <meta property="og:image:secure_url" content="./assets/img/pfp-with-bg.jpg" />
+  <meta property="og:description" content="AI Engineer @ Tata Electronics. Making Machine Vision smarter with deep learning and robotics." />
   <meta property="og:image" content="./assets/img/pfp-with-bg.jpg" />
-  <meta property="profile:username" content="thekakarott" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Tanudeep Ganguly" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tanudeep Ganguly — AI Engineer" />
   <meta name="twitter:image" content="./assets/img/pfp-with-bg.jpg" />
-  <meta name="twitter:url" content="https://thekakarott.github.io/" />
+  
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Tanudeep Ganguly</title>
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/4bf48f78b4.js" crossorigin="anonymous"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav_logo">Tanudeep</a>
 
-      <div class="nav_menu" id="nav-menu">
-        <ul class="nav_list grid">
-          <li class="nav_item">
-            <a href="#home" class="nav_link active-link">
-              <i class="uil uil-estate nav_icon"></i> Home
-            </a>
-          </li>
-          <li class="nav_item">
-            <a href="#about" class="nav_link">
-              <i class="uil uil-user nav_icon"></i> About
-            </a>
-          </li>
-          <li class="nav_item">
-            <a href="#skills" class="nav_link">
-              <i class="uil uil-file-alt nav_icon"></i> Skills
-            </a>
-          </li>
-          <li class="nav_item">
-            <a href="#qualification" class="nav_link">
-              <i class="uil uil-graduation-cap nav_icon"></i> Qualifications
-            </a>
-          </li>
-          <li class="nav_item">
-            <a href="#projects" class="nav_link">
-              <i class="uil uil-scenery nav_icon"></i> Projects
-            </a>
-          </li>
-          <li class="nav_item">
-            <a href="#contact" class="nav_link">
-              <i class="uil uil-message nav-icon nav_icon"></i> Contact Me
-            </a>
-          </li>
-        </ul>
-        <i class="uil uil-times nav_close" id="nav-close"></i>
-      </div>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="nav" id="navbar">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">TG://NEURAL_CORE</a>
 
-      <div class="nav_btns">
-        <!-- Change Theme -->
-        <i class="uil uil-moon change-theme" id="theme-button"></i>
+      <ul class="nav__links">
+        <li><a href="#hero" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Diagnostics</a></li>
+        <li><a href="#experience" class="nav__link">Timeline</a></li>
+        <li><a href="#research" class="nav__link">Publications</a></li>
+        <li><a href="#projects" class="nav__link">Modules</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <div class="nav_toggle" id="nav-toggle">
-          <i class="uil uil-apps"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main -->
-  <main class="main">
-    <!-- Home -->
-    <section class="home section" id="home">
-      <div class="home_container container grid">
-        <div class="home_content grid">
-          <div class="home_social">
-            <a href="https://www.linkedin.com/in/tanudeepganguly/" class="home_social-icon" target="_blank">
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-
-            <a href="https://github.com/thekakarott" class="home_social-icon" target="_blank">
-              <i class="uil uil-github-alt"></i>
-            </a>
-
-            <a href="#" class="home_social-icon" target="_blank">
-              <i class="uil uil-twitter-alt"></i>
-            </a>
-
-            <a href="https://www.instagram.com/rickky0_0/" class="home_social-icon" target="_blank">
-              <i class="uil uil-instagram"></i>
-            </a>
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="neural-canvas"></canvas>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__badge">
+            ONLINE // SYSTEM_ACTIVE
           </div>
-
-          <div class="home_img">
-            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" data-tilt>
-              <mask id="mask0" mask-type="alpha">
-                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-              </mask>
-              <g mask="url(#mask0)">
-                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                <image class="home_blob-img" x="12" y="8" href="./assets/img/icon.png" />
-              </g>
-            </svg>
-          </div>
-
-          <div class="home_data">
-            <h1 class="home_title">Hi, I'm Tanudeep</h1>
-            <h3 class="home_subtitle">I am <span class="type"></span> Developer</h3>
-
-            <p class="home_description">
-              Building Software to solve real life problems
-            </p>
-            <a href="#contact" class="button button--flex">
-              Contact Me
-              <i class="uil uil-message"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="home_scroll">
-          <a href="#about" class="home_scroll-button button--flex">
-            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-            <span class="home_scroll-name">Scroll Down</span>
-            <i class="uil uil-arrow-down home_scroll-arrow"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about section" id="about">
-      <h2 class="section_title">About Me</h2>
-      <span class="section_subtitle">My introduction</span>
-      <div class="about_container container grid">
-        <img src="./assets/img/about.png" alt="headshot image" class="about_img" data-tilt />
-        <div class="about_data">
-          <p class="about_description">
-            As part of my MTech studies, I am gaining hands-on experience in developing and training neural networks, implementing algorithms, analyzing data, and applying AI techniques to extract insights and patterns. I am honing my skills in Python, TensorFlow, PyTorch, OpenCV, other leading frameworks and sometimes Web.
-            Outside academics, I enjoy keeping up with the latest advancements in AI and participating in hackathons. I am passionate about leveraging technology for social good. Please feel free to connect with me to discuss our shared interests in AI and its real-world applications
+          
+          <h1 class="hero__title">
+            Tanudeep Ganguly
+            <span>AI ENGINEER</span>
+          </h1>
+          
+          <p class="hero__subtitle">
+            &gt;_ <span class="typed"></span>
           </p>
-          <div class="about_button">
-            <a download="" href="./CV.pdf" class="button button--flex" target="_blank">
-              Resume<i class="uil uil-file-download-alt button_icon"></i>
+          
+          <p class="hero__desc">
+            Designing machine vision systems for Dholera Fab (India's premier commercial 300mm semiconductor fab) at Tata Electronics. Focused on deep learning, computer vision, and robotics.
+          </p>
+          
+          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="#contact" class="btn-neon">
+              <i class="uil uil-bolt"></i> Connect Core
+            </a>
+            <a href="./CV.pdf" class="btn-neon" target="_blank" download>
+              <i class="uil uil-file-download-alt"></i> Resume.dat
             </a>
           </div>
         </div>
+
+        <!-- Interactive AI Diagnostics Chatbot Widget -->
+        <div class="ai-terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+            </div>
+            <div class="terminal__title">diagnostics@tanudeep.io</div>
+          </div>
+          <div class="terminal__body" id="terminal-body">
+            <!-- Dynamically populated via JS -->
+          </div>
+          <div class="terminal__input-area">
+            <input type="text" id="terminal-input" class="terminal__input" placeholder="Type /about, /skills, /projects, or /help..." />
+            <button id="terminal-send" class="terminal__send"><i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills -->
-    <section class="skills section" id="skills">
-      <h1 class="section_title">Skills</h1>
-      <span class="section_subtitle">My Technical Skills</span>
-      <div class="skills_container container grid">
-        <!-- Skill Set 1 -->
-        <div class="skill skills_content skills_open">
-          <div class="skills_header">
-            <i class="uil uil-arrow skills_icon"></i>
-
-            <div>
-              <h1 class="skills_title">Languages</h1>
-              <span class="skills_subtitle">Languages that I have picked up over the years</span>
-            </div>
-
-            <i class="uil uil-angle-down skills_arrow"></i>
-          </div>
-
-          <div class="skills_list grid">
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-java"></i>
-                </span>
-                <h3 class="skills_name">Java</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-python"></i>
-                </span>
-                <h3 class="skills_name">Python</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-js-square"></i>
-                </span>
-                <h3 class="skills_name">JavaScript</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo">
-                  <img src="./assets/img/php-logo.svg" alt="ts-logo">
-                </span>
-                <h3 class="skills_name">PHP</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <!-- <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-sass"></i>
-                </span>
-                <h3 class="skills_name">SASS</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-          </div> -->
-        </div>
-
-        <!-- Skill Set 2 -->
-        <div class="skill skills_content">
-          <div class="skills_header">
-            <i class="uil uil-brackets-curly skills_icon"></i>
-
-            <div>
-              <h1 class="skills_title">Libraries & Frameworks</h1>
-              <span class="skills_subtitle">Libraries and Frameworks that I prefer to work with</span>
-            </div>
-
-            <i class="uil uil-angle-down skills_arrow"></i>
-          </div>
-
-          <div class="skills_list grid">
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo">
-                  <img src="./assets/img/tf.svg" alt="next-logo">
-                </span>
-                <h3 class="skills_name">Tensorflow</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo">
-                  <img src="./assets/img/pt.svg" alt="next-logo">
-                </span>
-                <h3 class="skills_name">PyTorch</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
-                    <g clip-path="url(#prefix__clip0)">
-                      <path fill="#6E57E0" fill-rule="evenodd"
-                        d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                        clip-rule="evenodd" />
-                    </g>
-                    <defs>
-                      <clipPath id="prefix__clip0">
-                        <path fill="#fff" d="M0 0h54v32.4H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <h3 class="skills_name">Tailwind CSS</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-wordpress"></i>
-                </span>
-                <h3 class="skills_name">Wordpress</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo" style="max-width: 1.33rem;">
-                  <img src="./assets/img/ms.svg" alt="mongo-db-logo">
-                </span>
-                <h3 class="skills_name">MySQL</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skill Set 3 -->
-        <div class="skill skills_content">
-          <div class="skills_header">
-            <i class="uil uil-wrench skills_icon"></i>
-
-            <div>
-              <h1 class="skills_title">Tools</h1>
-              <span class="skills_subtitle">Tools that I know and use on a daily basis</span>
-            </div>
-
-            <i class="uil uil-angle-down skills_arrow"></i>
-          </div>
-
-          <div class="skills_list grid">
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-git-alt"></i>
-                </span>
-                <h3 class="skills_name">Git</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <h3 class="skills_name">GitHub</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <i class="fab fa-figma"></i>
-                </span>
-                <h3 class="skills_name">Figma</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo">
-                  <img src="./assets/img/vercel.svg" alt="vercel icon">
-                </span>
-                <h3 class="skills_name">Vercel</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon external-logo">
-                  <img src="./assets/img/aws.svg" alt="aws icon">
-                </span>
-                <h3 class="skills_name">AWS</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
-          </div>
-        </div>
-
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">About User</h2>
+        <p class="section__desc">Identity & Background Profile</p>
       </div>
-    </section>
 
-    <!-- Qualifications -->
-    <section class="qualification section" id="qualification">
-      <h2 class="section_title">Qualifications</h2>
-      <span class="section_subtitle">My Educational Qualification & Work Experience</span>
+      <div class="about__grid">
+        <div class="neural-card">
+          <p class="about__text">
+            I am currently an <strong>AI Engineer (Graduate Engineer Trainee)</strong> at <strong>Tata Electronics</strong>, focusing on developing and deploying machine vision models for manufacturing automation.
+          </p>
+          <p class="about__text">
+            I hold an <strong>M.Tech in CSE specializing in AI from NIT Agartala</strong> (CGPA 8.7, SGPA 10), where my research on robotic pathfinding and path optimization was featured in IEEE iSES 2024. Additionally, my work on LSTM-based music generation received a Best Paper Award at MICA 2023.
+          </p>
+          <p class="about__text">
+            Prior to joining Tata Electronics, I built ROS integration architectures for custom robotic designs at HyperHorizon and CUBO-BOTS, securing government development grants.
+          </p>
 
-      <div class="qualification_container container">
-        <div class="qualification_tabs">
-          <div class="qualification_button button-flex" id="educationheader">
-            <i class="uil uil-graduation-cap qualification_icon"></i>Education
-          </div>
-
-          <div class="qualification_button button-flex" id="workheader">
-            <i class="uil uil-briefcase-alt qualification_icon"></i>Work
-          </div>
-        </div>
-
-        <div class="qualification_sections">
-          <!-- Educational Qualification -->
-          <div class="qualification_content qualification_active" data-content id="education">
-            <!-- MTech IT -->
-            <div class="qualification_data">
-              <div>
-                <h3 class="qualification_title">M.Tech CSE in AI</h3>
-                <span class="qualification_subtitle"><a href="#" target="_blank"
-                    rel="noopener noreferrer">National Institute of Technology Agartala</a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2023 - 2025
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_circle"></span>
-                <span class="qualification_line"></span>
-              </div>
+          <div class="about__metrics">
+            <div class="metric-box">
+              <span class="metric-num">10.0</span>
+              <span class="metric-lbl">NIT SGPA</span>
             </div>
-            <!-- BTech IT -->
-            <div class="qualification_data">
-              <div>
-                <h3 class="qualification_title">B.Tech CSE</h3>
-                <span class="qualification_subtitle"><a href="#" target="_blank"
-                    rel="noopener noreferrer">Techno College of Engineering Agartala</a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2019 - 2023
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_circle"></span>
-                <span class="qualification_line"></span>
-              </div>
+            <div class="metric-box">
+              <span class="metric-num">6</span>
+              <span class="metric-lbl">Publications</span>
             </div>
-
-            <!-- School 11-12 -->
-            <div class="qualification_data">
-              <div></div>
-
-              <div>
-                <span class="qualification_circle"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <div>
-                <h3 class="qualification_title">Senior Secondary School</h3>
-                <span class="qualification_subtitle"><a href="#" target="_blank"
-                    rel="noopener noreferrer">Pranavanada Vidyamandir, Agartala</a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2017 - 2019
-                </div>
-              </div>
+            <div class="metric-box">
+              <span class="metric-num">15%</span>
+              <span class="metric-lbl">Perf Gain</span>
             </div>
-
-            <!-- School 1-10 -->
-            <div class="qualification_data">
-              <div>
-                <h3 class="qualification_title">Secondary School</h3>
-                <span class="qualification_subtitle"><a href="#" target="_blank"
-                    rel="noopener noreferrer">Kendriya Vidyalaya No.1, Kunjaban, Agartala </a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2007 - 2017
-                </div>
-              </div>
-              <div>
-                <span class="qualification_circle"></span>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Work Experience -->
-          <div class="qualification_content qualification-inactive" data-content id="work">
-            <!-- prmsnls -->
-            <div class="qualification_data">
-              <div>
-                <h3 class="qualification_title">Freelancing</h3>
-                <span class="qualification_subtitle"><a href="#" target="_blank"
-                    rel="noopener noreferrer"> </a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                    Present
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_circle"></span>
-                <span class="qualification_line"></span>
-              </div>
-            </div>
-
-            <!-- Gumlet -->
-            <div class="qualification_data">
-              <div></div>
-
-              <div>
-                <span class="qualification_circle"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <div>
-                <h3 class="qualification_title">Junior Software Developer in PHP</h3>
-                <span class="qualification_subtitle"><a href="https://www.metamintindia.com/" target="_blank"
-                    rel="noopener noreferrer">MetaMint Pvt. Ltd.</a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  March 2023 - May 2023
-                </div>
-              </div>
-            </div>
-
-            <!-- WeFrame.tech -->
-            <div class="qualification_data">
-              <div>
-                <h3 class="qualification_title">Data Analyst (Python) Intern</h3>
-                <span class="qualification_subtitle"><a href="https://www.ardentcollaborations.com/" target="_blank"
-                    rel="noopener noreferrer">Ardent comuptech Pvt. Ltd</a></span>
-                <div class="qualification_calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  November 2021 - December 2021
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_circle"></span>
-              </div>
-            </div>
-
           </div>
         </div>
-    </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio section" id="projects">
-      <h2 class="section_title">Projects</h2>
-      <span class="section_subtitle">To be Updated Soon</span>
-
-      <div class="portfolio_container container swiper-container swiper mySwiper">
-        <div class="swiper-wrapper">
-
-          <!-- Project 1 -->
-          <!-- <div class="portfolio_content grid swiper-slide">
-            <img src="./assets/img/daralmarefa.webp" alt="daral marefa" class="portfolio_img">
-
-            <div class="portfolio_data">
-              <h3 class="portfolio_title">
-                Dar Al Marefa
-              </h3>
-              <p class="portfolio_description">
-                This is a content-driven website for a school in Dubai. It is built using Next.js, Tailwind CSS and
-                Strapi CMS.
-              </p>
-              <a href="https://www.daralmarefa.ae/" class="button button-flex button-small portfolio_button"
-                target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-            </div>
-          </div> -->
-
-          <!-- Project 2 -->
-          <!-- <div class="portfolio_content grid swiper-slide">
-            <img src="./assets/img/agautomobile.webp" alt="ag Automobile" class="portfolio_img">
-
-            <div class="portfolio_data">
-              <h3 class="portfolio_title">
-                AG Automobile
-              </h3>
-              <p class="portfolio_description">
-                This is a content-driven website for an Automobile Business in Dubai. It is built using Next.js,
-                Tailwind CSS and Strapi CMS.
-              </p>
-              <a href="https://www.agautomobile.com/" class="button button-flex button-small portfolio_button"
-                target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-            </div>
-          </div> -->
-
-          <!-- Project 3 -->
-          <!-- <div class="portfolio_content grid swiper-slide">
-            <img src="./assets/img/al-ghurair.webp" alt="ag Automobile" class="portfolio_img">
-
-            <div class="portfolio_data">
-              <h3 class="portfolio_title">
-                Al Ghurair Investment
-              </h3>
-              <p class="portfolio_description">
-                A content-driven website for one of the largest family business groups in the Middle East. It is built
-                using Next.js, Tailwind CSS and Strapi CMS.
-              </p>
-              <a href="https://www.al-ghurair.com/" class="button button-flex button-small portfolio_button"
-                target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-            </div>
-          </div> -->
-
-          <!-- Project 4 -->
-          <!-- <div class="portfolio_content grid swiper-slide">
-            <img src="./assets/img/portfolio-preview.gif" alt="" class="portfolio_img">
-
-            <div class="portfolio_data">
-              <h3 class="portfolio_title">
-                Personal Portfolio Website
-              </h3>
-              <p class="portfolio_description">
-                My Personal Portfolio Website made using only HTML, CSS and JS with a clean and minimal UI.
-              </p>
-              <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
-                Check out
-                <i class="uil uil-arrow-right button_icon"></i>
-              </a>
-            </div>
-          </div> -->
+        <div class="holo-avatar-container">
+          <div class="holo-avatar">
+            <img src="./assets/img/icon.png" alt="Tanudeep Ganguly hologram" />
+          </div>
         </div>
-
-        <!-- Arrows -->
-        <div class="swiper-button-next">
-          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-        </div>
-        <div class="swiper-button-prev">
-          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-        </div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Me -->
-    <section class="contact section" id="contact">
-      <h1 class="section_title">Contact Me</h1>
-      <span class="section_subtitle">
-        Want to connect? My inbox is always open!
-      </span>
+  <!-- ===== SKILLS DIAGNOSTICS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Diagnostics</h2>
+        <p class="section__desc">Technical stack & capability report</p>
+      </div>
 
-      <div class="contact_container container grid">
-        <div>
-          <a href="mailto:pgupta@duck.com" target="_blank">
-            <div class="contact_info">
-              <i class="uil uil-envelope-alt contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Email</h3>
-                <span class="contact_subtitle">tanudeepgangulycs@gmail.com</span>
-              </div>
-            </div>
-          </a>
+      <div class="skills-grid">
+        <!-- Langs -->
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-items">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">C++</span>
+            <span class="skill-item">Java</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">PHP</span>
+          </div>
+        </div>
 
-          <a href="https://calendly.com/thekakarott" target="_blank">
-            <div class="contact_info">
-              <i class="uil uil-calendar-alt contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Online Meet</h3>
-                <span class="contact_subtitle">Schedule an Online Meet</span>
-              </div>
-            </div>
-          </a>
+        <!-- Frameworks -->
+        <div class="skill-category">
+          <h3>AI/ML & Robotics</h3>
+          <div class="skill-items">
+            <span class="skill-item">PyTorch</span>
+            <span class="skill-item">TensorFlow</span>
+            <span class="skill-item">ROS</span>
+            <span class="skill-item">OpenCV</span>
+            <span class="skill-item">CNN</span>
+            <span class="skill-item">YOLO</span>
+            <span class="skill-item">LSTM</span>
+          </div>
+        </div>
 
-          <a href="https://twitter.com/Thekakarott/" target="_blank">
-            <div class="contact_info">
-              <i class="uil uil-twitter-alt contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Twitter</h3>
-                <span class="contact_subtitle">@tanudeepganguly</span>
-              </div>
-            </div>
-          </a>
+        <!-- Infrastructure -->
+        <div class="skill-category">
+          <h3>Infrastructure</h3>
+          <div class="skill-items">
+            <span class="skill-item">Linux</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <a href="https://goo.gl/maps/AbkrLpc6JepJcrSL8" target="_blank">
-            <div class="contact_info">
-              <i class="uil uil-location-point contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Location</h3>
-                <span class="contact_subtitle">Agartala, India</span>
-              </div>
-            </div>
+  <!-- ===== TIMELINE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Timeline</h2>
+        <p class="section__desc">Work & deployment history</p>
+      </div>
+
+      <div class="cyber-timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-company">Tata Electronics</span>
+            <span class="timeline-date">2025 — PRESENT</span>
+          </div>
+          <h3 class="timeline-role">AI Engineer — Graduate Engineer Trainee</h3>
+          <p class="timeline-desc">
+            Deploying high-performance computer vision systems for cleanroom quality analysis at India's first commercial semiconductor Fab in Dholera, Gujarat, collaborating with ASML holistic lithography solutions.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-company">HyperHorizon</span>
+            <span class="timeline-date">2024</span>
+          </div>
+          <h3 class="timeline-role">Robotics Software Intern</h3>
+          <p class="timeline-desc">
+            Developed ROS packages for sensor fusion and autonomous obstacle mapping. Integrated custom camera drivers for deep learning-driven edge detection.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-company">CUBO-BOTS Pvt. Ltd.</span>
+            <span class="timeline-date">2023 — 2024</span>
+          </div>
+          <h3 class="timeline-role">Robotics Design & Software</h3>
+          <p class="timeline-desc">
+            Designed custom robotic chassis structures and deployed navigation stacks using ROS. Showcased prototypes at government expos to secure developmental funding.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-company">MetaMint Pvt. Ltd.</span>
+            <span class="timeline-date">MAR 2023 — MAY 2023</span>
+          </div>
+          <h3 class="timeline-role">Junior Software Developer (PHP)</h3>
+          <p class="timeline-desc">
+            Implemented new database structures and backend algorithms, boosting user engagement by 40% and cutting target page load speeds by 15%.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH PUBLICATIONS ===== -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Publications</h2>
+        <p class="section__desc">Scientific discoveries & research papers</p>
+      </div>
+
+      <div class="research-grid">
+        <div class="neural-card">
+          <div class="card-top">
+            <span class="venue-badge" style="color: var(--accent-neon); border-color: var(--accent-neon);">MICA 2025</span>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+            <a href="https://link.springer.com/chapter/10.1007/978-981-96-7614-9_16" target="_blank" class="paper-link">
+              Spatial-Attention Segmentation (SAS) for Secured AGV Navigation in Off-Road Environment
+            </a>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            Designed a spatial-attention segmentation framework enhancing navigation reliability of autonomous ground vehicles in off-road terrains.
+          </p>
+          <div class="award-badge">
+            <i class="uil uil-check-circle"></i> International Conference on MAchine inTelligence
+          </div>
+        </div>
+
+        <div class="neural-card">
+          <div class="card-top">
+            <span class="venue-badge" style="color: var(--primary-neon); border-color: var(--primary-neon);">CVIP 2025</span>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-93688-3_25" target="_blank" class="paper-link">
+              Unstructured Outdoor Terrain Segmentation Using SegNav for Safe AGV Navigation
+            </a>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            Developed a terrain segmentation model utilizing SegNav architectures to optimize safe navigation profiles for automated vehicles.
+          </p>
+          <div class="award-badge">
+            <i class="uil uil-check-circle"></i> Computer Vision and Image Processing
+          </div>
+        </div>
+
+        <div class="neural-card">
+          <div class="card-top">
+            <span class="venue-badge" style="color: var(--primary-neon); border-color: var(--primary-neon);">Procedia CS 2025</span>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+            <a href="https://www.sciencedirect.com/science/article/pii/S1877050925016667?via%3Dihub" target="_blank" class="paper-link">
+              YOLO-D: A Domain Adaptive approach towards low light object detection
+            </a>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            Created a domain-adaptive YOLO model to ensure robust target extraction and recognition accuracy in ultra-low lighting conditions.
+          </p>
+          <div class="award-badge">
+            <i class="uil uil-check-circle"></i> Procedia Computer Science
+          </div>
+        </div>
+
+        <div class="neural-card">
+          <div class="card-top">
+            <span class="venue-badge">IEEE iSES 2024</span>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+            <a href="https://ieeexplore.ieee.org/document/10884424" target="_blank" class="paper-link">
+              You Only Look Once in Dark: An Analytical Approach for Low Light Object Detection
+            </a>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            Conducted comparative evaluations of single-shot multi-box detection performance under simulated low light illumination profiles.
+          </p>
+          <div class="award-badge">
+            <i class="uil uil-check-circle"></i> IEEE Smart Electronic Systems
+          </div>
+        </div>
+
+        <div class="neural-card">
+          <div class="card-top">
+            <span class="venue-badge">IEEE iSES 2024</span>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+            <a href="https://ieeexplore.ieee.org/document/10884155" target="_blank" class="paper-link">
+              rA* — Re-Planned A* Technique for Point-to-Point Robot Navigation in Dynamic Environments
+            </a>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            Designed a robust variant of A* algorithm specialized in real-time static and dynamic obstacle forecasting for industrial autonomous mobile robots.
+          </p>
+          <div class="award-badge">
+            <i class="uil uil-check-circle"></i> IEEE Smart Electronic Systems
+          </div>
+        </div>
+
+        <div class="neural-card">
+          <div class="card-top">
+            <span class="venue-badge" style="color: var(--green-neon); border-color: var(--green-neon);">ACMI 2024</span>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
+            <a href="https://link.springer.com/chapter/10.1007/978-981-97-6222-4_44" target="_blank" class="paper-link">
+              MLSTM: A Novel Modified Long Short-Term Memory Networks for Melody Synthesis
+            </a>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            Enhanced neural music generation techniques. Received Springer recognition and a Best Paper Award for achieving outstanding rhythmic and structural diversity.
+          </p>
+          <div class="award-badge" style="color: var(--green-neon);">
+            <i class="uil uil-trophy"></i> Best Paper Award
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Deployed Modules</h2>
+        <p class="section__desc">Active technical code repositories</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="neural-card project-card">
+          <h3 style="font-size: 1.25rem;">SegNav</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-top: 0.5rem;">
+            CNN-based real-time image semantic segmentation designed for low-latency robotic vision systems during automated navigation routing.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">ROS</span>
+            <span class="project-tag">Computer Vision</span>
+          </div>
+          <a href="https://github.com/thekakarott" class="project-link" target="_blank">
+            Inspect Core System <i class="uil uil-arrow-right"></i>
           </a>
         </div>
 
-        <form action="https://formspree.io/f/xgejqlkp" class="contact_form grid" id="contact-form" method="POST">
-          <div id="alert" class="alert_style"></div>
-          <div class="contact_inputs grid">
-            <div class="contact_content">
-              <label class="contact_label">Name</label>
-              <input type="text" name="name" class="contact_input" id="name" required>
-            </div>
-            <div class="contact_content">
-              <label for="email" class="contact_label">Email</label>
-              <input type="email" name="email" class="contact_input" id="email" required>
-            </div>
+        <div class="neural-card project-card">
+          <h3 style="font-size: 1.25rem;">YOLO-D</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-top: 0.5rem;">
+            Domain-adaptive low-light object detection leveraging contrastive learning models to ensure object visibility reliability in low light conditions.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">YOLOv8</span>
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">AI</span>
           </div>
-          <div class="contact_content">
-            <label for="subject" class="contact_label">Subject</label>
-            <input type="text" name="subject" class="contact_input" id="subject" required>
-          </div>
-          <div class="contact_content">
-            <label for="message" class="contact_label">Message</label>
-            <textarea name="message" id="" cols="0" rows="7" class="contact_input message" id="message"
-              style="resize: vertical;" required></textarea>
-          </div>
+          <a href="https://github.com/thekakarott" class="project-link" target="_blank">
+            Inspect Core System <i class="uil uil-arrow-right"></i>
+          </a>
+        </div>
 
-          <div>
-            <button type="submit" class="button button-flex">
-              Send Message
-              <i class="uil uil-message button_icon"></i>
+        <div class="neural-card project-card">
+          <h3 style="font-size: 1.25rem;">Music Generation using LSTM</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-top: 0.5rem;">
+            Recurrent Neural Network model trained to synthesize coherent melodies using rhythm density vectors and tokenized note pitch structures.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">LSTM</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">NLP</span>
+          </div>
+          <a href="https://github.com/thekakarott" class="project-link" target="_blank">
+            Inspect Core System <i class="uil uil-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__desc">Establish core connection</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="neural-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--primary-neon); font-family: var(--font-mono);">
+            CONNECT_NODE
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            For collaborations, research coordination, or professional opportunities, feel free to transmit your messages using the form, reach out directly via email at <strong style="color: var(--accent-neon); font-weight: 600;">tanudeepgangulycs@gmail.com</strong>, or establish a connection through my LinkedIn profile.
+          </p>
+          <a href="https://www.linkedin.com/in/tanudeepganguly/" target="_blank" class="btn-neon" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1.5rem; font-size: 0.9rem; font-weight: 600; width: fit-content;">
+            <i class="uil uil-linkedin-alt"></i> Connect on LinkedIn
+          </a>
+        </div>
+
+        <div class="neural-card">
+          <form action="https://formspree.io/f/xgejqlkp" class="cyber-form" id="contact-form" method="POST">
+            <div class="form-group">
+              <label for="name">User Signature Name</label>
+              <input type="text" name="name" id="name" class="form-input" placeholder="e.g. John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Communication Node Email</label>
+              <input type="email" name="email" id="email" class="form-input" placeholder="e.g. user@domain.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Transmission Subject Header</label>
+              <input type="text" name="subject" id="subject" class="form-input" placeholder="e.g. Collaboration Request" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Transmission Message Block</label>
+              <textarea name="message" id="message" rows="5" class="form-input" placeholder="Input transmission payload here..." required></textarea>
+            </div>
+            <div id="form-status" class="form-status"></div>
+            <button type="submit" class="btn-neon">
+              <i class="uil uil-message"></i> Transmit Packet
             </button>
-          </div>
-        </form>
-
+          </form>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="footer_bg">
-      <div class="footer_container container grid">
-        <div>
-          <h1 class="footer_title">Tanudeep Ganguly</h1>
-          <span class="footer_subtitle">Full Stack Developer and ML Enthusiast</span>
-        </div>
-
-        <ul class="footer_links">
-          <li>
-            <a href="#about" class="footer_link">About</a>
-          </li>
-          <li>
-            <a href="#projects" class="footer_link">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="footer_link">Contact Me</a>
-          </li>
-        </ul>
-
-        <div class="footer_socials">
-          <a href="https://www.linkedin.com/in/thekakarott/" target="_blank" class="footer_social">
-            <i class="uil uil-linkedin-alt"></i>
-          </a>
-          <a href="https://twitter.com/Thekakarott/" target="_blank" class="footer_social">
-            <i class="uil uil-twitter-alt"></i>
-          </a>
-          <a href="https://www.instagram.com/kakarotta/" target="_blank" class="footer_social">
-            <i class="uil uil-instagram"></i>
-          </a>
-        </div>
+    <div class="container footer__inner">
+      <div class="footer__logo">TG://NEURAL_CORE_V3.0</div>
+      <div class="footer__socials">
+        <a href="https://github.com/thekakarott" class="footer__social" target="_blank"><i class="uil uil-github-alt"></i></a>
+        <a href="https://www.linkedin.com/in/tanudeepganguly/" class="footer__social" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+        <a href="https://twitter.com/Thekakarott/" class="footer__social" target="_blank"><i class="uil uil-twitter-alt"></i></a>
       </div>
-
-      <p class="footer_copy">&#169; Tanudeep Ganguly. All rights reserved</p>
+      <p class="footer__copy">© 2026 Tanudeep Ganguly. All rights reserved. System active.</p>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup_icon"></i>
-  </a>
-
-
-  <!-- JQuery -->
-  <script src="./assets/js/jquery.min.js"></script>
-
-  <!-- Swiper JS -->
-  <script src="./assets/js/swiper-bundle.min.js"></script>
-
-  <!-- Typed JS -->
+  <!-- Scripts -->
   <script src="./assets/js/typed.js"></script>
-
-  <!-- Tilt JS  -->
-  <script src="./assets/js/tilt.jquery.min.js"></script>
-
   <script src="./assets/js/main.js"></script>
-</body>
 
+</body>
 </html>
