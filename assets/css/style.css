@@ -183,6 +183,15 @@ body::after {
   list-style: none;
 }
 
+.nav__toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text-main);
+  cursor: pointer;
+  z-index: 101;
+  transition: 0.3s;
+}
+
 .nav__link {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -898,8 +907,59 @@ body::after {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+  
+  .nav__toggle {
+    display: block;
+  }
+  
   .nav__links {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: rgba(3, 7, 18, 0.95);
+    backdrop-filter: blur(15px);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 100;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+  }
+  
+  .nav__links.show-menu {
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .section {
+    padding: 4rem 0 2rem;
+  }
+  
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .section__title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Disable custom cursor trail on touch screen devices */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-trail,
+  .cursor-trail-outline {
+    display: none !important;
   }
 }
 

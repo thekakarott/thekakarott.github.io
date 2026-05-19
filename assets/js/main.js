@@ -44,6 +44,26 @@ document.querySelectorAll('a, button, .neural-card').forEach(el => {
 
 /* ===== STICKY NAVBAR & ACTIVE NAV LINKS ===== */
 const nav = document.getElementById('navbar');
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.querySelector('.nav__links');
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show-menu');
+    navToggle.classList.toggle('uil-bars');
+    navToggle.classList.toggle('uil-times');
+  });
+
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show-menu');
+      navToggle.classList.add('uil-bars');
+      navToggle.classList.remove('uil-times');
+    });
+  });
+}
+
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
   
